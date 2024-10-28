@@ -1,0 +1,26 @@
+/*!**********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./scss/print.scss ***!
+  \**********************************************************************************************************/
+/* Hide header and footer, only show title, main content */
+header, footer, .nav-links, .sidebar {
+  display: none !important; }
+
+/* Show site name, content title, and content */
+.site-title, h1, h2, h3, main {
+  display: block; }
+
+/* Remove background colors and images */
+* {
+  background: none !important;
+  color: black !important; }
+
+/* Replace links with their URL */
+a::after {
+  content: " (" attr(href) ")";
+  font-size: smaller; }
+
+/* Set serif font for print */
+body {
+  font-family: "Times New Roman", Georgia, Palatino, serif;
+  margin: 50px; }
+
